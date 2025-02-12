@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: angular-config
+  namespace: prod
+data:
+  config.json: |
+    {
+      "apiUrl": "http://192.168.56.11:31925/tpfoyer/universite"
+    }

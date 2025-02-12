@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tp-foyer
+  namespace: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tp-foyer
+  template:
+    metadata:
+      labels:
+        app: tp-foyer
+    spec:
+      containers:
+        - name: tp-foyer
+          image: ahmedhmila/devops-project-back
+          ports:
+            - containerPort: 8089
+          envFrom:
+            - configMapRef:
+                name: tp-foyer-config

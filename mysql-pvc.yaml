@@ -4,6 +4,7 @@ metadata:
   name: mysql-pvc
   namespace: prod
 spec:
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:

@@ -6,5 +6,5 @@ metadata:
 data:
   config.json: |
     {
-      "apiUrl": "http://172.29.31.99:31836/tpfoyer/universite"
+      "apiUrl": "http://172.29.31.100:31836/tpfoyer/universite"
     }

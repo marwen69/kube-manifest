@@ -23,8 +23,8 @@ spec:
                 name: db-credentials
           volumeMounts:
             - name: mysql-storage
-              mountPath: /var/lib/mysql  # Répertoire où MySQL stocke ses données
+              mountPath: /var/lib/mysql
       volumes:
         - name: mysql-storage
           persistentVolumeClaim:
-            claimName: mysql-pvcc  # Doit correspondre au PVC
+            claimName: mysql-pvc

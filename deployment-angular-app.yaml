@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: angular-app
-          image: ahmedhmila/foyer-front:v-48
+          image: marwenhm/foyer-front:v-8
           ports:
             - containerPort: 80
           volumeMounts:

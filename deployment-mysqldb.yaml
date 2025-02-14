@@ -21,3 +21,10 @@ spec:
           envFrom:
             - secretRef:
                 name: db-credentials
+          volumeMounts:
+            - name: mysql-storage
+              mountPath: /var/lib/mysql  # Répertoire où MySQL stocke ses données
+      volumes:
+        - name: mysql-storage
+          persistentVolumeClaim:
+            claimName: mysql-pvcc  # Doit correspondre au PVC

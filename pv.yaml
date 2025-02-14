@@ -4,7 +4,7 @@ metadata:
   name: mysql-pv
 spec:
   capacity:
-    storage: 10Gi
+    storage: 10Gi  # Set this to the desired size
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
